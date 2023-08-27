@@ -1,4 +1,5 @@
 import express, { Application } from 'express';
+import helmet from 'helmet';
 import env from 'env';
 
 export class Server {
@@ -20,6 +21,7 @@ export class Server {
 
   private middlewares() {
     this.app.use(express.json());
+    this.app.use(helmet());
   }
 
   private routes() {}
