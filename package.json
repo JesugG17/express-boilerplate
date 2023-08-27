@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "_moduleAliases": {
-    "env": "dis/config",
-    "@data": "dist/src/data",
-    "@presentation": "dist/src/presentation",
-    "@domain": "dist/src/domain"
+    "env": "dist/config",
+    "@data": "dist/data",
+    "@presentation": "dist/presentation",
+    "@domain": "dist/domain"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./dist/src/main.js",
+    "dev": "nodemon ./dist/index.js",
     "format": "prettier . --write"
   },
   "keywords": [],
