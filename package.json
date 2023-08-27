@@ -7,7 +7,7 @@
     "env": "dis/config",
     "@data": "dist/src/data",
     "@presentation": "dist/src/presentation",
-    "@domain": "dist/src/domain",
+    "@domain": "dist/src/domain"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
