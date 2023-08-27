@@ -1,28 +1,22 @@
-import path from "path";
-import dotenv from "dotenv";
+import path from 'path';
+import dotenv from 'dotenv';
 
 // Parsing the env file.
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
-
 interface ENV {
+  PORT: number;
 }
 
-interface Config {}
-
-// Loading process.env as ENV interface
+interface Config {
+  PORT: number;
+}
 
 const getConfig = (): ENV => {
   return {
-    SOME: 'YOUR ENVIROMENT'
+    PORT: process.env.PORT,
   };
 };
-
-// Throwing an Error if any field was undefined we don't 
-// want our app to run if it can't connect to DB and ensure 
-// that these fields are accessible. If all is good return
-// it as Config which just removes the undefined from our type 
-// definition.
 
 const getSanitzedConfig = (config: ENV): Config => {
   for (const [key, value] of Object.entries(config)) {

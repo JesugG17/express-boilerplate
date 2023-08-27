@@ -1,7 +1,9 @@
-namespace global {
-    export interface ProcessEnv {
-        PORT: number;
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv {
+      PORT: number;
     }
+  }
 }
 
-export {}
+export {};
