@@ -1,11 +1,34 @@
-# TYPESCRIPT STARTER KIT
-This project is only a void project of typescript, thinking on a Express Application
+# EXPRESS STARTER KIT
 
-# STEPS
+This is a Express application starter kit project, using Clean Architecture with some modifications
 
-# Install node modules
-1.- Download the code and execute the command "npm i" for build node modules
+<img src="https://res.cloudinary.com/dvwx1abhq/image/upload/v1693117266/qadvbgtuj4r47lvln1db.webp" />
 
-# Compile typescript code
-2.- You must execute the command "tsc" to generate the dist folder, on that folder you gonna
-have the javascript files that you gonna execute to get ready the app (I recommend to use Nodemon)
+Clean architecture is a set of standards that aims to develop layered software.
+
+This have some benefits like:
+  * easy writting code
+  * better performs
+  * easy maintence
+
+# How to run de application?
+
+## 1.- Download or clone this project
+~~~
+git clone https://github.com/JesugG17/typescript-project-starter
+~~~
+
+## 2.- Download node_modules
+~~~
+npm i or yarn
+~~~
+
+## 3.- Run typescript compiles
+~~~
+tsc --watch
+~~~
+
+## 4.- Run develop server with nodemon
+~~~
+npm run dev or yarn dev
+~~~
