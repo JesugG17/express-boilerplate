@@ -7,7 +7,7 @@ This is a Express application starter kit project, using Clean Architecture with
 Clean architecture is a set of standards that aims to develop layered software.
 
 This have some benefits like:
-  * easy writting code
+  * write code easily
   * better performs
   * easy maintence
 
